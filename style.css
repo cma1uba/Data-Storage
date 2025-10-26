@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("../images/bg-mobile.png");
+    background-size: cover;
+    background-position: fixed;
+    color: #fff;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    max-width: 375px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.card{
+    width: 300px;
+    background: hsl(228, 56%, 28%);
+    border-radius: 12px;
+    padding: 2.5rem;
+}
+.action-card{
+    height: 200px;
+    border-top-right-radius: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;;
+}
+.action-card img{
+    width: 120px;
+}
+.main-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+button{
+    border: 0;
+}
+.cols-item{
+    background: hsl(229, 57%, 11%);
+    padding: 10px;
+    border-radius: 8px;
+    height: 50px;
+    width: 50px;
+}
+.cols-item img{
+    width: 24px;
+}
+
+.info-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    padding-bottom: 5rem;
+}
+.usage-text{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.usage-value{
+    font-weight: 700;
+}
+
+.progress-bar{
+    height: 18px;
+    width: 100%;
+    border-radius: 10px;
+    background: hsl(229, 57%, 11%);
+    padding: 1px;
+}
+.progress-bar-fill{
+    height: 100%;
+    width: 74.5%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.progress-bar_thumb{
+    width: 15px;
+    height: 15px;
+    background: hsl(229, 7%, 90%);
+    border-radius: 50%;
+    margin-right: 2px;
+}
+.storage-limit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.remaining-box{
+    width: 200px;
+    background: hsl(229, 7%, 95%);
+    color: hsl(229, 57%, 11%);
+    padding: 1.2rem 2rem;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+.remaining-value{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.remaining-label{
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: hsl(229, 7%, 55%);
+}
