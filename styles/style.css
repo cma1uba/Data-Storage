@@ -143,11 +143,8 @@ button{
     .container{
         flex-direction: row;
         max-width: 950px;
-        gap: 10px;
-    }
-    .action-card{
-        height: 150px;
-    }
+        gap: 20px;
+        }
     .info-card{
         align-items: flex-start;
         width: 500px;
